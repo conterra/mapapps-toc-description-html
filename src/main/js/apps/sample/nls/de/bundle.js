@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 module.exports = {
-    apptitle: "TOC description html Sample",
+    apptitle: "TOC HTML Description Sample",
     map: {
         koeln: {
             title: "Bildung und Kultur",

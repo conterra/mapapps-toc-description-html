@@ -15,7 +15,7 @@
  */
 module.exports = {
     root: {
-        apptitle: "TOC description html Sample",
+        apptitle: "TOC HTML Description Sample",
         map: {
             koeln: {
                 title: "Education and Culture",
