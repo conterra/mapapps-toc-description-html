@@ -1,0 +1,64 @@
+{
+    "name": "dn_tocdescriptionhtml",
+    "version": "1.0.0-SNAPSHOT",
+    "title": "${bundleName}",
+    "description": "${bundleDescription}",
+    "vendor": "con terra GmbH",
+    "productName": "devnet-mapapps-selectionactions",
+    "dependencies": {
+        "map-widget": "^4.7.0",
+        "toc": "^4.7.0"
+    },
+    "CSS-Themes-Extension": [
+        {
+            "name": "*",
+            "files": [
+                "./css/styles.css"
+            ]
+        }
+    ],
+    "components": [
+        {
+            "name": "HtmlDescriptionActionDefinitionFactory",
+            "provides": "toc.ActionDefinitionFactory",
+            "propertiesConstructor": true,
+            "properties": {
+                "truncationThreshold": 200,
+                "marginBox": {
+                    "w": 320,
+                    "h": 520
+                }
+            },
+            "references": [
+                {
+                    "name": "_mapWidgetModel",
+                    "providing": "map-widget.MapWidgetModel"
+                },
+                {
+                    "name": "_textLabelWindow",
+                    "providing": "dn_tocdescriptionhtml.HtmlTextLabelWindow"
+                }
+            ]
+        },
+        {
+            "name": "ActionUIFactory",
+            "provides": "toc.ActionUIFactory"
+        },
+        {
+            "name": "HtmlTextLabelWindowSupport",
+            "provides": "dn_tocdescriptionhtml.HtmlTextLabelWindow",
+            "properties": {
+                "marginBox": {
+                    "w": 320,
+                    "h": 520
+                }
+            },
+            "references": [
+                {
+                    "name": "_windowManager",
+                    "providing": "ct.framework.api.WindowManager"
+                }
+            ]
+        }
+    ]
+}
