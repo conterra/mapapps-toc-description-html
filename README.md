@@ -8,7 +8,7 @@ https://demos.conterra.de/mapapps/resources/apps/downloads_tocdescriptionhtml/in
 ## Installation Guide
 **Requirement: map.apps 4.7.0**
 
-[dn_tocdescriptionhtml Documentation](https://github.com/conterra/mapapps-toc-desription-html/tree/master/src/main/js/bundles/dn_tocdescriptionhtml)
+[dn_tocdescriptionhtml Documentation](https://github.com/conterra/mapapps-toc-description-html/tree/master/src/main/js/bundles/dn_tocdescriptionhtml)
 
 ## Development Guide
 ### Define the mapapps remote base
