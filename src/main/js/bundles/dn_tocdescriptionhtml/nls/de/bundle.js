@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 module.exports = {
-    bundleName: "Selection Actions",
-    bundleDescription: "Dieses Bundle stellt zus\u00e4tzliche Selektionsmethoden zur Verf\u00fcgung",
+    bundleName: "TOC Description HTML",
+    bundleDescription: "Dieses Bundle stellt eine zus\u00e4tzliche TOC-Action zur Verf\u00fcgung, die HTML-Code unterst\u00fctzt.",
     ui: {
         description: "Beschreibung",
         labelMore: "Beschreibung anzeigen"

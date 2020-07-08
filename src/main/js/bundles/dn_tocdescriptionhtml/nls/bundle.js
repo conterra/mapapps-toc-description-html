@@ -15,8 +15,8 @@
  */
 module.exports = {
     root: ({
-        bundleName: "Selection Actions",
-        bundleDescription: "This bundle provides additional selection methods.",
+        bundleName: "TOC Description HTML",
+        bundleDescription: "This bundle provides an addition description toc-action that supports HTML-code.",
         ui: {
             description: "Description",
             labelMore: "Show description"
