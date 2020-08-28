@@ -33,6 +33,7 @@
         </div>
         <div
             v-else
+            class="grey--text caption"
             v-html="labelValue">
         </div>
     </div>
