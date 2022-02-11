@@ -2,6 +2,10 @@
 
 This bundle provides an additional toc action for map.apps toc bundle that allows you to use html in layer descriptions.
 
+## Build Status
+
+[![devnet-bundle-snapshot](https://github.com/conterra/mapapps-toc-description-html/actions/workflows/devnet-bundle-snapshot.yml/badge.svg)](https://github.com/conterra/mapapps-toc-description-html/actions/workflows/devnet-bundle-snapshot.yml)
+
 ## Sample App
 https://demos.conterra.de/mapapps/resources/apps/downloads_tocdescriptionhtml/index.html
 
