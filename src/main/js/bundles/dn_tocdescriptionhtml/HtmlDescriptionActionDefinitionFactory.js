@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 import {findInfoOfSubLayer, findSubLayerInfos } from "map-widget/SubLayersInfo";
-import { TYPES } from "toc/model/TocItem";
 
 const ID = "show-html-description";
 
@@ -42,7 +41,7 @@ export default class HtmlDescriptionActionDefinitionFactory {
 
             isVisibleForItem(tocItem) {
                 const hasDescription = isValidDescription(this.valueOf(tocItem));
-                if (!hasDescription && tocItem.type === TYPES.TYPE_SUBLAYER) {
+                if (!hasDescription && tocItem.type === "sublayer") {
                     const infos = findSubLayerInfos(tocItem.ref);
                     if (infos && !infos.loaded) {
                         return infos.load().then(() => isValidDescription(this.valueOf(tocItem)));
