@@ -1,0 +1,38 @@
+{
+    "name": "domain-group",
+    "version": "1.0.0",
+    "dependencies": {
+        "domains-system": "^4.10.0"
+    },
+    "main": "",
+    "layer": "",
+    "i18n": [],
+    "domain-config": {
+        "map-layers": [
+            {
+                "id": "group-1",
+                "title": "GROUP-DOMAIN-1",
+                "description": "<div><p>Liste aller Bibliotheken, Museen und Schulen in Köln.</p><a href='https://www.conterra.de'>Link</a></div>",
+                "type": "GROUP",
+                "layers": [
+                    {
+                        "id": "stoerung-domain-3",
+                        "type": "AGS_DYNAMIC",
+                        "title": "Stoerung-Domain-3",
+                        "description": "<div><p>Liste aller Bibliotheken, Museen und Schulen in Köln.</p><a href='https://www.conterra.de'>Link</a></div>",
+                        "url": "https://services.conterra.de/arcgis/rest/services/mapapps/stoerung/MapServer",
+                        "sublayers": [
+                            {
+                                "id": 0,
+                                "description": "<div><p>Liste aller Bibliotheken, Museen und Schulen in Köln.</p><a href='https://www.conterra.de'>Link</a></div>"
+                            },
+                            {
+                                "id": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

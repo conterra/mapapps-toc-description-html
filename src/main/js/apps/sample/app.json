@@ -5,6 +5,7 @@
     "load": {
         "bundleLocations": [
             "localbundles",
+            "${app}/bundles",
             "bundles"
         ],
         "allowedBundles": [
@@ -23,7 +24,8 @@
             "scalebar",
             "locateme",
             "toc",
-            "dn_tocdescriptionhtml"
+            "dn_tocdescriptionhtml",
+            "domain-group"
         ],
         "require": [
             "${app}.app"
