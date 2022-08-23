@@ -16,4 +16,4 @@
 import ".";
 import "./HtmlDescriptionActionDefinitionFactory";
 import "./ActionUIFactory";
-import "./HtmlTextLabelWindowSupport"
+import "./HtmlTextLabelWindowSupport";

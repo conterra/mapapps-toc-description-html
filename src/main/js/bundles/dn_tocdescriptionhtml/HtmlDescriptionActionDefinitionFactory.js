@@ -13,8 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {findInfoOfSubLayer, findSubLayerInfos } from "./SubLayersInfo";
-
 const ID = "show-html-description";
 
 export default class HtmlDescriptionActionDefinitionFactory {
@@ -42,10 +40,7 @@ export default class HtmlDescriptionActionDefinitionFactory {
             isVisibleForItem(tocItem) {
                 const hasDescription = isValidDescription(this.valueOf(tocItem));
                 if (!hasDescription && tocItem.type === "sublayer") {
-                    const infos = findSubLayerInfos(tocItem.ref);
-                    if (infos && !infos.loaded) {
-                        return infos.load().then(() => isValidDescription(this.valueOf(tocItem)));
-                    }
+                    return tocItem.ref.load?.().then(() => isValidDescription(this.valueOf(tocItem)));
                 }
                 return hasDescription;
             },
@@ -56,16 +51,12 @@ export default class HtmlDescriptionActionDefinitionFactory {
                     return itemDescription;
                 }
 
-                const metadata = findInfoOfSubLayer(tocItem.ref);
-                if (!metadata) {
-                    return undefined;
-                }
-                return metadata.description;
+                return tocItem.ref.sourceJSON?.description;
             },
 
             trigger(tocItem) {
                 labelWin.showText({
-                    text: tocItem.ref.description,
+                    text: this.valueOf(tocItem),
                     windowTitle: i18n.description,
                     windowSize: winSize
                 });
