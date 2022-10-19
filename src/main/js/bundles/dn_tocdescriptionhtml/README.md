@@ -24,7 +24,12 @@ Specify which actions should be used:
 "toc": {
     "Config": {
         "actions": [
-            "show-html-description"
+            "show-description",
+            "zoom-to-extent",
+            "activate-children",
+            "deactivate-children",
+            "change-opacity",
+            "show-copyright"
         ]
     }
 },
