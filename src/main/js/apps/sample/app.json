@@ -38,7 +38,12 @@
         "toc": {
             "Config": {
                 "actions": [
-                    "*"
+                    "zoom-to-extent",
+                    "activate-children",
+                    "deactivate-children",
+                    "change-opacity",
+                    "show-copyright",
+                    "show-html-description"
                 ]
             }
         },
