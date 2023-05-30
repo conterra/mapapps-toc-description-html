@@ -4,7 +4,7 @@
     "title": "${bundleName}",
     "description": "${bundleDescription}",
     "vendor": "con terra GmbH",
-    "productName": "devnet-mapapps-selectionactions",
+    "productName": "devnet-mapapps-tocdescriptionhtml",
     "dependencies": {
         "map-widget": "^4.7.0",
         "toc": "^4.7.0"
