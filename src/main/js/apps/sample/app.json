@@ -27,9 +27,6 @@
             "dn_tocdescriptionhtml",
             "domain-group"
         ],
-        "require": [
-            "${app}.app"
-        ],
         "i18n": [
             "bundle"
         ]
