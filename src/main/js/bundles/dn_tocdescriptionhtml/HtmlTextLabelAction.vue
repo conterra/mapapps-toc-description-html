@@ -22,7 +22,8 @@
         </div>
         <div
             v-if="labelToLong"
-            class="grey--text caption">
+            class="grey--text caption"
+        >
             <a
                 v-if="showLabelMore()"
                 href="javascript:void(0)"
@@ -31,11 +32,12 @@
                 {{ labelMore }}
             </a>
         </div>
+        <!-- eslint-disable vue/no-v-html -->
         <div
             v-else
             class="grey--text caption"
-            v-html="labelValue">
-        </div>
+            v-html="labelValue"
+        />
     </div>
 </template>
 <script>
