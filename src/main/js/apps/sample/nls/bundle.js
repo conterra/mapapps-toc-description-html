@@ -16,8 +16,23 @@
 export default {
     root: {
         apptitle: "TOC HTML Description Sample",
-        map: {
-            koeln: {
+         map: {
+            koeln1: {
+                title: "Basic Data",
+                districts: {
+                    title: "City Districts",
+                    text: "Cologne's city district <b>{STV_NAME}</b>."
+                },
+                boroughs: {
+                    title: "Boroughs",
+                    text: "Boroughs <b>{NAME}</b> is located in Cologne's precints {STADTBEZIR}."
+                },
+                precints: {
+                    title: "Precints",
+                    text: "Cologne's precint {NAME}."
+                }
+            },
+            koeln2: {
                 title: "Education and Culture",
                 description: "<div><p>List of all libraries, museums and schools in Cologne.</p><a href='https://www.conterra.de'>Link</a></div>",
                 libraries: {
@@ -25,12 +40,61 @@ export default {
                     description: "<div><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><a href='https://www.conterra.de'>Link</a></div>"
                 },
                 museums: {
-                    title: "Museums"
+                    title: "Museums",
+                    text: "Museum <b>{NAME}</b> is located in Cologne's boroughs {STADTTEIL}."
                 },
                 schools: {
                     title: "Schools"
                 }
+            },
+            koeln3: {
+                title: "Recreation",
+                sights: {
+                    title: "Tourist Attractions",
+                    titleSingle: "Tourist Attraction",
+                    text: "Tourist attraction <b>{NAME}</b> is located in Cologne's borough {STADTTEIL}."
+                },
+                playgrounds: {
+                    title: "Playgrounds- and Sports Areas",
+                    text: "<b>{Spielplatzname}</b> is located in Cologne's borough {Stadtteil}.",
+                    baskets: "Basketball Baskets",
+                    goals: "Soccer Goals",
+                    tables: "Ping-Pong Tables",
+                    walls: "Goal Wall",
+                    skate: "Skating",
+                    misc: "Miscellaneous"
+                },
+                places: {
+                    title: "Places of Event",
+                    titleSingle: "Place of Event",
+                    text: "<b>{NAME}</b> is a {expression/carrier} place of event."
+                }
+            },
+            basemaps: {
+                gray: "Street Map (gray)",
+                streets: "Street Map",
+                topo: "Topographical Map",
+                hybrid: "Aerial (hybrid)"
             }
+        },
+        tools: {
+            drawerLeft: "Tools",
+            measuring: "Measuring Tools"
+        },
+        common: {
+            number: "Number",
+            area: "Area [ha]",
+            totalArea: "Percentage of the total area [%]",
+            name: "Name",
+            provider: "Provider",
+            address: "Address",
+            furtherinfo: "Further Information",
+            precint: "Precint",
+            district: "District",
+            private: "privater",
+            municipal: "municipal",
+            zip: "Zip code",
+            type: "Type"
         }
     },
     "de": true
