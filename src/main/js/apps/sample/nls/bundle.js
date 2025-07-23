@@ -16,7 +16,7 @@
 export default {
     root: {
         apptitle: "TOC HTML Description Sample",
-         map: {
+        map: {
             koeln1: {
                 title: "Basic Data",
                 districts: {

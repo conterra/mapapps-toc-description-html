@@ -7,7 +7,7 @@ This bundle provides an additional toc action for map.apps toc bundle that allow
 [![devnet-bundle-snapshot](https://github.com/conterra/mapapps-toc-description-html/actions/workflows/devnet-bundle-snapshot.yml/badge.svg)](https://github.com/conterra/mapapps-toc-description-html/actions/workflows/devnet-bundle-snapshot.yml)
 
 ## Sample App
-https://demos.conterra.de/mapapps/resources/apps/downloads_tocdescriptionhtml/index.html
+https://demos.conterra.de/mapapps/resources/apps/public_demo_tocdescriptionhtml/index.html
 
 ## Installation Guide
 **Requirement: map.apps 4.7.0**
